@@ -11,4 +11,4 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(session({secret:"d0a8su2jd2md02ud28Jda783h", resave:false, saveUninitialized: true}));
 app.use(routes);
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
